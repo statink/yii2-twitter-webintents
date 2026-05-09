@@ -4,7 +4,7 @@
     return;
   }
 
-  const intentRegex = /twitter\.com\/intent\/(\w+)/;
+  const intentRegex = /\b(?:twitter|x)\.com\/intent\/(\w+)/;
   const windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes';
   const width = 550;
   const height = 420;

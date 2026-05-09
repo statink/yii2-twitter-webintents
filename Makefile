@@ -32,10 +32,6 @@ node_modules: package-lock.json
 package-lock.json: package.json
 	npm update
 
-.PRECIOUS: %.js
-%.js: %.es node_modules composer.json
-	npx babel --presets=@babel/env -s false -o $@ $<
-
 .PRECIOUS: %.min.js
 %.min.js: %.js node_modules
 	npx uglifyjs -c -m -o $@ $<

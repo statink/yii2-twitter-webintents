@@ -4,6 +4,6 @@
   "author": "AIZAWA Hina",
   "license": "MIT",
   "dependencies": {
-    "uglify-js": "^3.17.4"
+    "terser": "^5.47.1"
   }
 }

@@ -34,7 +34,7 @@ package-lock.json: package.json
 
 .PRECIOUS: %.min.js
 %.min.js: %.js node_modules
-	npx uglifyjs -c -m -o $@ $<
+	npx terser -c -m -o $@ $<
 
 %.gz: %
 	gzip -9 < $< > $@
